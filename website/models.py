@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class AboutUs(models.Model):
+    text=models.CharField(max_length=1000,blank=False)
+    image=models.ImageField(upload_to=None,width_field=500,height_field=500,blank=True)
